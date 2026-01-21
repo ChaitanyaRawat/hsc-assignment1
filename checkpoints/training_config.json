@@ -1,0 +1,40 @@
+{
+  "mode": {
+    "train": true,
+    "morph": false,
+    "evaluate": false
+  },
+  "training": {
+    "epochs": 50,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "latent_dim": 32,
+    "beta": 0.5
+  },
+  "data": {
+    "data_dir": "./data",
+    "val_split": 0.1
+  },
+  "model": {
+    "model_path": null,
+    "checkpoint_dir": "./checkpoints"
+  },
+  "morphing": {
+    "source_idx": null,
+    "target_idx": null,
+    "source_image": null,
+    "target_image": null,
+    "steps": 30,
+    "interpolation_method": "linear"
+  },
+  "output": {
+    "output_dir": "./outputs",
+    "save_video": false,
+    "save_frames": false,
+    "output_name": null
+  },
+  "general": {
+    "seed": 42,
+    "device": "auto"
+  }
+}
